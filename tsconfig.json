@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "@/*": ["./src/*"],
+      "@arietta-studio/recognition": ["./src/core"],
+      "@arietta-studio/recognition/react": ["./src/react"]
+    }
+  },
+  "include": ["src", "docs", ".dumirc.ts", "api", "**/*.ts", "**/*.d.ts", "**/*.tsx"]
+}
