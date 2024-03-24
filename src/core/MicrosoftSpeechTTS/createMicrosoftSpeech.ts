@@ -7,11 +7,11 @@ const MICROSOFT_SPEECH_URL =
 
 export interface MicrosoftSpeechPayload {
   /**
-   * @title 语音合成的文本
+   * @title Text to convert to speech
    */
   input: string;
   /**
-   * @title SSML 语音合成的配置
+   * @title SSML Options
    */
   options: SsmlOptions;
 }

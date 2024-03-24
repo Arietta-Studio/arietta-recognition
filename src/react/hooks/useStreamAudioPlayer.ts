@@ -22,7 +22,9 @@ export const useStreamAudioPlayer = (): StreamAudioPlayerResponse => {
   useEffect(() => {
     try {
       audioRef.current = new Audio();
-    } catch {}
+    } catch {
+      console.error('Error useStreamAudioPlayer: Audio not supported');
+    }
 
     if (!audioRef.current) return;
     const onLoadedMetadata = () => {

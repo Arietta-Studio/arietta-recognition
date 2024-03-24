@@ -7,11 +7,11 @@ import { getHeadersAndData } from '../utils/getHeadersAndData';
 
 export interface EdgeSpeechPayload {
   /**
-   * @title 语音合成的文本
+   * @title Text to convert to speech
    */
   input: string;
   /**
-   * @title SSML 语音合成的配置
+   * @title SSML Options
    */
   options: Pick<SsmlOptions, 'voice'>;
 }

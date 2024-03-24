@@ -25,7 +25,7 @@ export default () => {
 
   const { locale }: any = useControls(
     {
-      locale: 'zh-CN',
+      locale: 'en-US',
     },
     { store },
   );

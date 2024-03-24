@@ -8,7 +8,7 @@ import { Flexbox } from 'react-layout-kit';
 import { MICROSOFT_SPEECH_BACKEND_URL } from '../../_util/api';
 import { genLevaOptions } from '../../_util/leva';
 
-const defaultText = '这是一段使用 Microsoft Speech 的语音演示';
+const defaultText = 'Hello, World!';
 
 export default () => {
   const store = useCreateStore();
@@ -38,7 +38,7 @@ export default () => {
       },
       voice: {
         options: genLevaOptions(new MicrosoftSpeechTTS().voiceOptions),
-        value: 'zh-CN-YunxiaNeural',
+        value: 'en-US-GuyNeural',
       },
     },
     { store },

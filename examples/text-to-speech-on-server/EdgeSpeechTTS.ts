@@ -1,26 +1,27 @@
-import { EdgeSpeechPayload, EdgeSpeechTTS } from '@/core';
 import { Buffer } from 'node:buffer';
 import fs from 'node:fs';
 import path from 'node:path';
 
-// 由于 nodejs 环境缺少 `WebSocket` 实例，因此我们需要将其 polyfill
+import { EdgeSpeechPayload, EdgeSpeechTTS } from '@/core';
+
+// WebSocket
 // import WebSocket from 'ws';
 // global.WebSocket = WebSocket;
 
-// 实例化 EdgeSpeechTTS
-const tts = new EdgeSpeechTTS({ locale: 'zh-CN' });
+// EdgeSpeechTTS
+const tts = new EdgeSpeechTTS({ locale: 'en-US' });
 
-// 创建语音合成请求负载
+// Payload
 const payload: EdgeSpeechPayload = {
-  input: '这是一段语音演示',
+  input: 'This is a speech demonstration',
   options: {
-    voice: 'zh-CN-XiaoxiaoNeural',
+    voice: 'en-US-GuyNeural',
   },
 };
 
 const speechFile = path.resolve('./speech.mp3');
 
-// 调用 create 方法来合成语音
+// Main
 async function main() {
   const response = await tts.create(payload);
   const mp3Buffer = Buffer.from(await response.arrayBuffer());
@@ -28,4 +29,5 @@ async function main() {
   fs.writeFileSync(speechFile, mp3Buffer);
 }
 
+// eslint-disable-next-line unicorn/prefer-top-level-await
 main();

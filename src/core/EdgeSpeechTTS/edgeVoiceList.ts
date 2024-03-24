@@ -16,6 +16,7 @@ export default {
   'fr-FR': ['fr-FR-DeniseNeural', 'fr-FR-EloiseNeural', 'fr-FR-HenriNeural'],
   'ja-JP': ['ja-JP-KeitaNeural', 'ja-JP-NanamiNeural'],
   'ko-KR': ['ko-KR-InJoonNeural', 'ko-KR-SunHiNeural'],
+  'lt-LT': ['lt-LT-OnaNeural2', 'lt-LT-LeonasNeural2'],
   'pt-BR': ['pt-BR-AntonioNeural', 'pt-BR-FranciscaNeural'],
   'ru-RU': ['ru-RU-DmitryNeural', 'ru-RU-SvetlanaNeural'],
   'zh-CN': [

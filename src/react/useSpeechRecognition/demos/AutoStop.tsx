@@ -8,7 +8,7 @@ export default () => {
   const store = useCreateStore();
   const { locale }: any = useControls(
     {
-      locale: 'zh-CN',
+      locale: 'en-US',
     },
     { store },
   );

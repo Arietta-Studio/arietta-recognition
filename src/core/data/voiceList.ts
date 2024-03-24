@@ -91,6 +91,8 @@ export default {
   'ko-KR-SoonBokNeural': '순복',
   'ko-KR-SunHiNeural': '선히',
   'ko-KR-YuJinNeural': '유진',
+  'lt-LT-LeonasNeural2': 'Leonas',
+  'lt-LT-OnaNeural2': 'Ona',
   'pt-BR-AntonioNeural': 'Antônio',
   'pt-BR-BrendaNeural': 'Brenda',
   'pt-BR-DonatoNeural': 'Donato',

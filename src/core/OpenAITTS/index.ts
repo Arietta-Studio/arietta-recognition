@@ -9,16 +9,16 @@ export type OpenaiVoice = 'alloy' | 'echo' | 'fable' | 'onyx' | 'nova' | 'shimme
 
 export interface OpenAITTSPayload {
   /**
-   * @title 语音合成的文本
+   * @title The text to be synthesized.
    */
   input: string;
   options: {
     /**
-     * @title 语音合成的模型名称
+     * @title The model to use for speech synthesis.
      */
     model: string;
     /**
-     * @title 语音合成的声音名称
+     * @title The voice to use for speech synthesis.
      */
     voice: OpenaiVoice;
   };

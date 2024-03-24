@@ -6,20 +6,20 @@ import { RecordMineType, getRecordMineType } from '@/core/utils/getRecordMineTyp
 export interface OpenAISTTPayload {
   options: {
     /**
-     * @title 语音文件格式
+     * @title The MIME type of the audio file.
      */
     mineType: RecordMineType;
     /**
-     * @title 语音识别的模型名称
+     * @title The model to use for speech recognition.
      */
     model: string;
     /**
-     * @title 语音识别的prmopt 以更好的获得whisper的解析效果
+     * @title The prompt to use for speech recognition.
      */
     prompt?: string;
   };
   /**
-   * @title 语音识别的文件
+   * @title
    */
   speech: Blob;
 }

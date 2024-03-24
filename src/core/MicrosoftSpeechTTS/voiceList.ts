@@ -107,6 +107,7 @@ const azureVoiceList = {
     'ko-KR-InJoonNeural',
     'ko-KR-JiMinNeural',
   ],
+  'lt-LT': ['lt-LT-OnaNeural2', 'lt-LT-LeonasNeural2'],
   'pt-BR': [
     'pt-BR-AntonioNeural',
     'pt-BR-BrendaNeural',

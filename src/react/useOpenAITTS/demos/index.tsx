@@ -7,7 +7,7 @@ import { Flexbox } from 'react-layout-kit';
 
 import { OPENAI_BASE_URL } from '@/core/const/api';
 
-const defaultText = '这是一段使用 OpenAI Speech to Text 的语音演示';
+const defaultText = 'Hello, World!';
 
 export default () => {
   const store = useCreateStore();

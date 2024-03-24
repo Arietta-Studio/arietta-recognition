@@ -7,7 +7,7 @@ import { Flexbox } from 'react-layout-kit';
 
 import { genLevaOptions } from '../../_util/leva';
 
-const defaultText = '这是一段使用 Speech Synthes 的语音演示';
+const defaultText = 'Hello, World!';
 
 export default () => {
   const store = useCreateStore();
@@ -27,7 +27,7 @@ export default () => {
       },
       voice: {
         options: genLevaOptions(new SpeechSynthesisTTS().voiceOptions),
-        value: '婷婷',
+        value: 'Samantha',
       },
     },
     { store },

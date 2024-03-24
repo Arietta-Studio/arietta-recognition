@@ -27,7 +27,7 @@ constructor(options: MicrosoftSpeechAPI): MicrosoftSpeechTTS
 import { MicrosoftSpeechTTS } from '@arietta-studio/recognition';
 
 // get MicrosoftSpeechTTS instance
-const tts = new MicrosoftSpeechTTS({ locale: 'zh-CN' });
+const tts = new MicrosoftSpeechTTS({ locale: 'en-US' });
 
 // create payload
 const payload: MicrosoftSpeechPayload = {

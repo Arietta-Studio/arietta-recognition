@@ -44,6 +44,7 @@ export const useAudioRecorder = (onBlobAvailable?: (blob: Blob) => void) => {
         recorder.start();
         _startTimer();
 
+        // TODO: Check if this is the correct type
         recorder.addEventListener('dataavailable', (event) => {
           const blobData = event.data;
           setBlob(blobData);
