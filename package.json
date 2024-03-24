@@ -97,10 +97,10 @@
     "uuid": "^9"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18",
     "@arietta-studio/arietta-i18n": "^1.0.0",
     "@arietta-studio/lint": "latest",
     "@arietta-studio/ui": "^1",
+    "@commitlint/cli": "^18",
     "@types/lodash-es": "^4",
     "@types/node": "^20",
     "@types/react": "^18",
