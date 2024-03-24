@@ -21,7 +21,7 @@ A high-quality & reliable recognition toolkit for various data types, including 
 
 [Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
 
-![](https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/284077909-854cc09a-b3c7-4fc4-9ea7-f7137abba351.png)
+![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
 
@@ -91,8 +91,6 @@ const speechFile = path.resolve('./speech.mp3');
 fs.writeFileSync(speechFile, mp3Buffer);
 ```
 
-<https://github.com/arietta-studio/arietta-recognition/assets/28616219/3ab68c5a-2745-442e-8d66-ca410192ace1>
-
 > \[!IMPORTANT]\
 > **Run on Node.js**
 >
@@ -121,8 +119,6 @@ export default () => {
   );
 };
 ```
-
-<https://github.com/arietta-studio/arietta-recognition/assets/28616219/c2638383-314f-44c3-b358-8fbbd3028d61>
 
 ## 📦 Installation
 
@@ -199,8 +195,8 @@ Every bit counts and your one-time donation sparkles in our galaxy of support! Y
 
 <a href="https://opencollective.com/arietta-studio" target="_blank">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/arietta-studio/.github/blob/main/static/sponsor-dark.png?raw=true">
-    <img  src="https://github.com/arietta-studio/.github/blob/main/static/sponsor-light.png?raw=true">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/arietta-studio/.github/blob/master/static/sponsor-dark.png?raw=true">
+    <img  src="https://github.com/arietta-studio/.github/blob/master/static/sponsor-light.png?raw=true">
   </picture>
 </a>
 
@@ -214,7 +210,7 @@ Every bit counts and your one-time donation sparkles in our galaxy of support! Y
 
 #### 📝 License
 
-Copyright © 2023 [Arietta Studio][profile-link]. <br />
+Copyright © 2024 [Arietta Studio][profile-link]. <br />
 This project is [MIT](./LICENSE) licensed.
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
