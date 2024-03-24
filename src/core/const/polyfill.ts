@@ -5,7 +5,9 @@ const getSpeechRecognition = () => {
       (window as any)?.SpeechRecognition ||
       (window as any)?.webkitSpeechRecognition
     );
-  } catch {}
+  } catch {
+    return null;
+  }
 };
 
 const getSpeechSynthesis = () => {
@@ -15,7 +17,9 @@ const getSpeechSynthesis = () => {
       (window as any)?.speechSynthesis ||
       (window as any)?.webkitSpeechSynthesis
     );
-  } catch {}
+  } catch {
+    return null;
+  }
 };
 
 const getSpeechSynthesisUtterance = () => {
@@ -25,7 +29,9 @@ const getSpeechSynthesisUtterance = () => {
       (window as any)?.SpeechSynthesisUtterance ||
       (window as any)?.webkitSpeechSynthesisUtterance
     );
-  } catch {}
+  } catch {
+    return null;
+  }
 };
 export const SpeechRecognition = getSpeechRecognition();
 export const SpeechSynthesis = getSpeechSynthesis();

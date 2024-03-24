@@ -1,6 +1,7 @@
 const toHalfWidthAndCleanSpace = (str: string): string => {
+  // prettier-ignore
   return str
-    .replaceAll(/[\uFF01-\uFF5E]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0xFE_E0))
+    .replaceAll(/[\uFF01-\uFF5E]/g, (ch) => String.fromCodePoint(ch.codePointAt(0)! - 0xFE_E0))
     .replaceAll('\u3000', ' ')
     .replaceAll('。', '.')
     .replaceAll('，', ',')
@@ -25,7 +26,7 @@ const toHalfWidthAndCleanSpace = (str: string): string => {
 export const splitTextIntoSegments = (text: string, maxChars: number = 100): string[] => {
   text = toHalfWidthAndCleanSpace(text);
 
-  const sentences = text.match(/[^.!;?]+[.!;?]+/g) || [];
+  const sentences = text.match(/[^!.;?]+[!.;?]+/g) || [];
   const segments: string[] = [];
   let currentSegment = '';
 

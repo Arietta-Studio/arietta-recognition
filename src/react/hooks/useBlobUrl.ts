@@ -30,7 +30,9 @@ export const useBlobUrl = (src: string) => {
           const newAudio = playAudioBlob(blob);
           setUrl(newAudio.url);
           setAudio(newAudio.audio);
-        } catch {}
+        } catch {
+          console.error('Failed to play audio');
+        }
         setIsGlobalLoading(false);
       },
     },
