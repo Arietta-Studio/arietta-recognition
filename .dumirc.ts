@@ -28,10 +28,11 @@ const themeConfig = {
   footer: 'Made with 🤯 by Arietta Studio',
   giscus: {
     category: 'Q&A',
-    categoryId: 'DIC_kwDOJloKoM4CXsCu',
+    categoryId: 'DIC_kwDOLkQSls4CeM_k',
     repo: 'arietta-studio/arietta-recognition',
-    repoId: 'R_kgDOJloKoA',
+    repoId: 'R_kgDOLkQSlg',
   },
+  hideHomeNav: true,
   name: 'Recognition',
   socialLinks: {
     discord: 'https://discord.gg/',
